@@ -9,3 +9,4 @@ function countBy(x, n) {
     }
     return z;
   }
+  countBy(2,4);
