@@ -1,8 +1,6 @@
 function sumArray(array) {
   let sum = 0;
-  if (!Array.isArray(array)) {
-    return 0;
-  } else if (array.length <= 1) {
+  if (!Array.isArray(array) || array.length <= 1) {
     return 0;
   } else {
     array.sort(compare);
@@ -18,4 +16,4 @@ function sumArray(array) {
 function compare(a, b) {
   return a > b ? 1 : (a == b ? 0 : -1);
 }
-sumArray([1,3,4]);
+let ssum = sumArray([2,4,345,12]);
